@@ -1,0 +1,106 @@
+:root{
+	--background--color: #00030C;
+	--mainColor--description: #C0C0C0;
+	--main--white: #FFFFFF;	
+}
+
+header{
+	height: 350px;
+	background: linear-gradient(180deg,rgb(0, 147, 233, 0.5) ); 
+}
+
+
+header h1{
+	font-size: 50px;
+	color:black;
+	text-align: center;	
+	height: 50px;
+	padding-top: 5px;
+	padding-bottom: 1rem;
+	font-weight: 700;
+	background: white;		
+}
+
+/* Flex grid para o logo*/
+.header__logo{
+	display: grid;
+	grid-template-areas: 
+
+	"aside main "	
+}
+
+.img__header{
+	grid-area: aside;
+
+}
+
+.h1__header{
+	grid-area: main;
+	width: 86vw;
+}
+
+
+
+body{
+	background: linear-gradient(180deg,rgb(0, 147, 233, 0.5)30%, rgb(128, 208, 199, 0.3), #fcfcfc );
+	font-family: 'Merriweather', serif;
+}
+
+nav a{
+	text-transform: uppercase;
+	font-weight: bold ;
+	font-size: 20px;
+	color: black;
+	text-decoration: none;
+}
+
+nav a:hover{
+	color:darkblue;
+	font-size:25px;
+	cursor: pointer;
+
+}
+
+nav a:active{
+	color: red;
+}
+
+ul{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.menu__button{
+	width:13vw;
+	background-color:lightblue;
+	border: 3px solid #00030C;
+	border-radius:7px;
+	margin: 5px 0 0 0px;
+}
+
+/*CSS footer*/
+
+footer{
+	text-align: center;
+	margin:0, auto;
+	background-color: #fcfcfc;
+	height:230px;
+}
+
+#logo_img{
+	margin-top: 30px;
+}
+
+.copyright{
+	font-size: 15px;
+	font-weight: bold;
+	padding-bottom: 1rem;
+	margin-top: 1rem;
+}
+
+
+/*svg line dode*/
+
+svg{
+	background-color: black;
+}

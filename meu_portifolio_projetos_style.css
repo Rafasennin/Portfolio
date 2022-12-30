@@ -1,0 +1,114 @@
+:root{
+	--background--color: #00030C;
+	--mainColor--description: #C0C0C0;
+	--main--white: #FFFFFF;	
+}
+
+header{
+	height: 350px;
+	background: linear-gradient(180deg,rgb(0, 147, 233, 0.5) );
+}
+
+
+body{
+	background: linear-gradient(180deg,rgb(0, 147, 233, 0.5)30%, rgb(128, 208, 199, 0.3), #fcfcfc );
+	font-family: 'Merriweather', serif;
+}
+
+header h1{
+	font-size: 50px;
+	color:black;
+	text-align: center;	
+	height: 6rem;
+	padding-top: 3rem;
+}
+
+nav a{
+	text-transform: uppercase;
+	font-weight: bold ;
+	font-size: 20px;
+	color: black;
+	text-decoration: none;
+}
+
+nav a:hover{
+	color:darkblue;
+	font-size:25px;
+	cursor: pointer;
+
+}
+
+nav a:active{
+	color: red;
+	text-transform: ;
+}
+
+nav {
+	display: flex; 
+	align-items: center;
+			
+}
+
+#first_video{
+	margin-bottom: 20px;
+	border: 5px solid #00030C;
+	border-radius: 8px;
+}
+
+.first_button{
+	width:12vw;
+	background-color:lightblue;
+	border: 3px solid #00030C;
+	border-radius:7px;
+	margin: 3px 10px 3px;
+}
+
+main h1{
+	color: black;
+	font-size: 20px;
+}
+
+main{
+	text-align: center;
+	margin:0,auto;
+}
+
+main a{
+	font-weight: bold ;
+	font-size: 20px;
+	color: black;
+	text-decoration: none;
+
+}
+
+main a:hover{
+	font-size: 25px;
+	color: darkblue;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+main p{
+	margin-bottom: 20px;
+}
+
+/*CSS footer*/
+
+footer{
+	text-align: center;
+	margin:0, auto;
+	background-color: #fcfcfc;
+	height:230px;
+}
+
+#logo_img{
+	margin-top: 30px;
+
+}
+
+.copyright{
+	font-size: 15px;
+	font-weight: bold;
+	padding-bottom: 1rem;
+	margin-top: 1rem;
+}
