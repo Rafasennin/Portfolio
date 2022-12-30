@@ -4,6 +4,14 @@
 	--main--white: #FFFFFF;	
 }
 
+body{
+	width: auto;
+	margin: 0 auto;
+	background: linear-gradient(180deg,rgb(0, 147, 233, 0.5)30%, rgb(128, 208, 199, 0.3), #fcfcfc );
+	font-family: 'Merriweather', serif;
+}
+
+
 header{
 	height: 350px;
 	background: linear-gradient(180deg,rgb(0, 147, 233, 0.5) ); 
@@ -22,29 +30,12 @@ header h1{
 }
 
 /* Flex grid para o logo*/
+
 .header__logo{
 	display: grid;
-	grid-template-areas: 
-
-	"aside main "	
+	grid-template-columns: 12vw auto;	
 }
 
-.img__header{
-	grid-area: aside;
-
-}
-
-.h1__header{
-	grid-area: main;
-	width: 86vw;
-}
-
-
-
-body{
-	background: linear-gradient(180deg,rgb(0, 147, 233, 0.5)30%, rgb(128, 208, 199, 0.3), #fcfcfc );
-	font-family: 'Merriweather', serif;
-}
 
 nav a{
 	text-transform: uppercase;
@@ -71,12 +62,18 @@ ul{
 }
 
 .menu__button{
-	width:13vw;
+	width:5vw;
 	background-color:lightblue;
 	border: 3px solid #00030C;
 	border-radius:7px;
-	margin: 5px 0 0 0px;
+	margin-right: 1rem;
 }
+
+.container__list{
+	margin-top: 1.5rem;
+	margin-right: 0.5rem;
+}
+
 
 /*CSS footer*/
 
@@ -102,5 +99,42 @@ footer{
 /*svg line dode*/
 
 svg{
-	background-color: black;
+	background-color: linear-gradient(180deg,rgb(0, 147, 233, 0.5)30%, rgb(128, 208, 199, 0.3), #fcfcfc );;
+}
+
+@media screen and (max-width: 768px){ 
+
+	.header__logo{
+		display: grid;
+		grid-template-columns: auto auto;	
+	}
+
+header h1{
+
+	font-size: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+	}
+
+	nav a{
+		font-size: 20px;	
+	}
+
+	.container__list{
+		margin-top: 2rem;
+		margin-left: 3.5rem;
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	svg{
+		width: 100vwpx;
+		height: 500px;
+	}
+
+	.menu__button{
+		width:12vw;
+	}
+	
 }
