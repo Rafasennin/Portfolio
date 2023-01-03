@@ -5,9 +5,28 @@
 }
 
 header{
-	height: 350px;
+	height: 200px;
 	background: linear-gradient(180deg,rgb(0, 147, 233, 0.5) );
 }
+
+header h1{
+	font-size: 50px;
+	color:black;
+	text-align: center;	
+	height: 50px;
+	padding-top: 5px;
+	padding-bottom: 1rem;
+	font-weight: 700;
+	background: white;		
+}
+
+/* Flex grid para o logo*/
+
+.header__logo{
+	display: grid;
+	grid-template-columns: 12vw auto;	
+}
+
 
 
 body{
@@ -15,13 +34,11 @@ body{
 	font-family: 'Merriweather', serif;
 }
 
-header h1{
-	font-size: 50px;
-	color:black;
-	text-align: center;	
-	height: 6rem;
-	padding-top: 3rem;
+nav{
+	display: flex;
+	justify-content: flex-end;
 }
+
 
 nav a{
 	text-transform: uppercase;
@@ -40,14 +57,8 @@ nav a:hover{
 
 nav a:active{
 	color: red;
-	text-transform: ;
 }
 
-nav {
-	display: flex; 
-	align-items: center;
-			
-}
 
 .first_button{
 	width:12vw;
@@ -56,6 +67,85 @@ nav {
 	border-radius:7px;
 	margin: 3px 10px 3px;
 }
+
+/* CSS form*/
+
+main{
+	width: 1200px;
+	margin: 0 auto;	
+}
+
+form{
+	margin-left: 320px;
+}
+
+
+input{
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 20px;
+	width: 50%;
+}
+
+form label, form legend{
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+textarea{
+	margin-bottom: 20px;
+}
+
+#radio-email, #radio-telefone, #radio-WhatsApp{
+	display: inline-block;
+	width: 3%;
+	margin-right: 30px;	
+}
+
+select{
+	margin-bottom: 20px;
+}
+
+.checkbox{
+	display: inline-block;
+	width: 3%;
+	margin-right: 30px;
+}
+
+.form__submit{
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	background-color: orange;
+	border: none;
+	margin-left: 60px;
+	border-radius: 10px;
+	
+}
+
+.form__submit:hover{
+	transform: scale(1.1);
+	background-color: darkorange;
+	color: darkblue	;
+	cursor: pointer;
+	transition: 1500ms;
+}
+
+table, thead, table td{
+	text-align: center;
+	border: #00030C solid 3px;
+	padding: 5px;
+}
+
+thead{
+	background-color: aquamarine;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+
 
 /*CSS footer*/
 
@@ -76,4 +166,61 @@ footer{
 	font-weight: bold;
 	padding-bottom: 1rem;
 	margin-top: 1rem;
+}
+
+@media screen and (max-width:768px ){
+
+	header{
+		width: 1200px;
+		margin: 0 auto;
+	}
+
+
+	.img__header{
+		width: 370px;
+		height: 100px;
+		
+	}
+
+
+	.header__logo{
+		height: 100px;
+		width: 1200px;
+		margin: 0;
+		display: flex;
+		justify-content: center;	
+		
+	}
+
+	header h1{
+		font-size: 50px;
+		width: 850px;
+		height: 80px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+				
+	}
+
+	.first_button{
+		width:150px;
+		padding: 5px 0;
+		margin-top: 2rem;
+		margin-right: 2rem;
+		
+	}
+
+	form{
+		margin-top: 8rem;
+	}
+
+	table{
+		margin-left: 8rem;
+		margin-top: 5rem;
+	}
+
+	footer{
+		width: 1200px;
+		margin: 2rem auto;
+	}
 }

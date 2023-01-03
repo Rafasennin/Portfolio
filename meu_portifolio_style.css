@@ -123,9 +123,7 @@ header h1{
 
 	.container__list{
 		margin-top: 2rem;
-		margin-left: 3.5rem;
-		display: flex;
-		justify-content: space-evenly;
+		margin-right: 1.5rem;
 	}
 
 	svg{
