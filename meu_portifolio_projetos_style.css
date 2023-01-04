@@ -19,8 +19,21 @@ header h1{
 	font-size: 50px;
 	color:black;
 	text-align: center;	
-	height: 6rem;
-	padding-top: 3rem;
+	height: 50px;
+	padding-top: 5px;
+	padding-bottom: 1rem;
+	font-weight: 700;
+	background: white;		
+}
+
+.header__logo{
+	display: grid;
+	grid-template-columns: 12vw auto;	
+}
+
+nav{
+	display: flex;
+	justify-content: flex-end;
 }
 
 nav a{
@@ -43,24 +56,21 @@ nav a:active{
 	text-transform: ;
 }
 
-nav {
-	display: flex; 
-	align-items: center;
-			
-}
-
-#first_video{
-	margin-bottom: 20px;
-	border: 5px solid #00030C;
-	border-radius: 8px;
-}
 
 .first_button{
 	width:12vw;
 	background-color:lightblue;
 	border: 3px solid #00030C;
 	border-radius:7px;
-	margin: 3px 10px 3px;
+	padding: 5px 0;
+	margin-top: 3rem;
+	margin-right: 5rem;
+}
+
+#first_video{
+	margin-bottom: 20px;
+	border: 5px solid #00030C;
+	border-radius: 8px;
 }
 
 main h1{
@@ -88,10 +98,9 @@ main a:hover{
 	text-decoration: underline;
 }
 
-main p{
-	margin-bottom: 20px;
+.p_link{
+	margin-bottom: 10rem;
 }
-
 /*CSS footer*/
 
 footer{
@@ -112,3 +121,59 @@ footer{
 	padding-bottom: 1rem;
 	margin-top: 1rem;
 }
+
+@media screen and (max-width:768px ){
+
+	header{
+		width: 763px;
+		margin: 0 auto;
+	}
+
+
+	.img__header{
+		width: 100vw;
+		height: 100px;
+		
+	}
+
+	.header__logo{
+			display: grid;
+			grid-template-columns: auto auto;		
+	}
+
+	.h1__header{
+		width: 410px;
+		font-size: 50px;
+		padding: 0;
+		height: 100px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+	}
+
+	nav{
+		width: 763px;
+		display: flex;
+		justify-content: flex-end;
+		
+	}
+
+	.first_button{
+		width:150px;
+		padding: 5px 0;
+		margin-top: 3rem;
+		margin-right: 5rem;
+		
+	}
+
+	main{
+		width: 763px;
+		margin: 2rem auto;
+	}
+
+	footer{
+		width: 763px;
+		margin: 2rem auto;
+	}
+}		

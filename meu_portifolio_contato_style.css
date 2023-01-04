@@ -65,7 +65,9 @@ nav a:active{
 	background-color:lightblue;
 	border: 3px solid var(--background--color);
 	border-radius:7px;
-	margin: 3px 10px 3px;
+	padding: 5px 0;
+	margin-top: 3rem;
+	margin-right: 5rem;
 }
 
 /* CSS form*/
@@ -171,30 +173,27 @@ footer{
 @media screen and (max-width:768px ){
 
 	header{
-		width: 1200px;
+		width: 100vw;
 		margin: 0 auto;
 	}
 
 
 	.img__header{
-		width: 370px;
+		width: 100vw;
 		height: 100px;
 		
 	}
 
 
 	.header__logo{
-		height: 100px;
-		width: 1200px;
-		margin: 0;
-		display: flex;
-		justify-content: center;	
-		
+			display: grid;
+			grid-template-columns: auto auto;		
 	}
 
 	header h1{
-		font-size: 50px;
-		width: 850px;
+		width: 100vw;
+		font-size: 40px;
+		padding-right: 5.6rem;
 		height: 80px;
 		display: flex;
 		justify-content: center;
@@ -202,17 +201,45 @@ footer{
 				
 	}
 
+	nav{
+		width: 763px;
+		display: flex;
+		justify-content: flex-end;
+	}
+
 	.first_button{
 		width:150px;
 		padding: 5px 0;
-		margin-top: 2rem;
-		margin-right: 2rem;
+		margin-top: 3rem;
 		
 	}
 
-	form{
-		margin-top: 8rem;
+	main{
+		width: 763px;
 	}
+
+	form{
+		width: 100vw;
+		margin: 8rem auto;
+	}
+
+	.input__form{
+		width: 100vw;
+	}
+
+	.mensage{
+		width: 400px;
+	}
+
+	.legend_fieldset{
+		width: 500px;
+		margin-bottom: 1rem;
+	}
+
+	.label_checkbox{
+		width: 580px;
+	}
+
 
 	table{
 		margin-left: 8rem;
@@ -220,7 +247,7 @@ footer{
 	}
 
 	footer{
-		width: 1200px;
+		width: 763px;
 		margin: 2rem auto;
 	}
 }
