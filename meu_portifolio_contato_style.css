@@ -24,7 +24,8 @@ header h1{
 
 .header__logo{
 	display: grid;
-	grid-template-columns: 12vw auto;	
+	grid-template-columns: 12vw auto;
+	box-sizing: border-box;	
 }
 
 
@@ -172,82 +173,63 @@ footer{
 
 @media screen and (max-width:768px ){
 
-	header{
-		width: 100vw;
-		margin: 0 auto;
-	}
-
-
-	.img__header{
-		width: 100vw;
-		height: 100px;
-		
-	}
-
-
 	.header__logo{
-			display: grid;
-			grid-template-columns: auto auto;		
+		display: grid;
+		grid-template-columns: 1fr 1fr;	
 	}
 
 	header h1{
-		width: 100vw;
-		font-size: 40px;
-		padding-right: 5.6rem;
-		height: 80px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-				
-	}
-
-	nav{
-		width: 763px;
-		display: flex;
-		justify-content: flex-end;
+	width: 44.5vw;
+	font-size: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
 	}
 
 	.first_button{
-		width:150px;
-		padding: 5px 0;
+		width:120px;
 		margin-top: 3rem;
-		
+		margin-right: 2rem;
 	}
 
 	main{
-		width: 763px;
+		width: 100vw;
 	}
 
 	form{
-		width: 100vw;
+		width: 92vw;
 		margin: 8rem auto;
 	}
 
 	.input__form{
-		width: 100vw;
+		width: 80vw;
 	}
 
 	.mensage{
-		width: 400px;
+		width: 90vw;
 	}
 
-	.legend_fieldset{
-		width: 500px;
+	.legend_fieldset, .label_checkbox{
+		width: 90vw;
 		margin-bottom: 1rem;
+		display: flex;
+		flex-wrap: wrap;
 	}
 
-	.label_checkbox{
-		width: 580px;
+	.form__submit{
+		width: 260px;
+		margin-left: 0;
 	}
-
 
 	table{
-		margin-left: 8rem;
+		width: 80vw;
 		margin-top: 5rem;
+		margin-left: 2.2rem;
 	}
 
 	footer{
-		width: 763px;
-		margin: 2rem auto;
+		width: 100vw;
+		margin: 8rem auto;
 	}
+
 }

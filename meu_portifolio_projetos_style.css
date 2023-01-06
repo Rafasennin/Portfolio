@@ -53,7 +53,6 @@ nav a:hover{
 
 nav a:active{
 	color: red;
-	text-transform: ;
 }
 
 
@@ -124,56 +123,35 @@ footer{
 
 @media screen and (max-width:768px ){
 
-	header{
-		width: 763px;
-		margin: 0 auto;
-	}
-
-
-	.img__header{
-		width: 100vw;
-		height: 100px;
-		
-	}
-
 	.header__logo{
-			display: grid;
-			grid-template-columns: auto auto;		
-	}
+		display: grid;
+		grid-template-columns: 1fr 1fr;		
+}
 
-	.h1__header{
-		width: 410px;
-		font-size: 50px;
-		padding: 0;
-		height: 100px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		
-	}
-
-	nav{
-		width: 763px;
-		display: flex;
-		justify-content: flex-end;
-		
+	header h1{
+	width: 44.5vw;
+	font-size: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
 	}
 
 	.first_button{
-		width:150px;
-		padding: 5px 0;
+		width:120px;
 		margin-top: 3rem;
-		margin-right: 5rem;
-		
+		margin-right: 2rem;
 	}
 
 	main{
-		width: 763px;
-		margin: 2rem auto;
+		width: 100vw;
+	}
+
+	#first_video{
+		width: 90vw;
 	}
 
 	footer{
-		width: 763px;
-		margin: 2rem auto;
+		width: 100vw;
+		margin: 8rem auto;
 	}
 }		
