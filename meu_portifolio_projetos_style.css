@@ -4,15 +4,16 @@
 	--main--white: #FFFFFF;	
 }
 
+body{
+	width: auto;
+	margin: 0 auto;
+	background: linear-gradient(180deg,rgb(0, 147, 233, 0.5)30%, rgb(128, 208, 199, 0.3), #fcfcfc );
+	font-family: 'Merriweather', serif;
+}
+
 header{
 	height: 350px;
 	background: linear-gradient(180deg,rgb(0, 147, 233, 0.5) );
-}
-
-
-body{
-	background: linear-gradient(180deg,rgb(0, 147, 233, 0.5)30%, rgb(128, 208, 199, 0.3), #fcfcfc );
-	font-family: 'Merriweather', serif;
 }
 
 header h1{
@@ -125,15 +126,21 @@ footer{
 
 	.header__logo{
 		display: grid;
-		grid-template-columns: 1fr 1fr;		
+		grid-template-columns: auto auto;		
 }
 
 	header h1{
-	width: 44.5vw;
+
 	font-size: 25px;
+	width: 40vw;
+	height: 56px;
 	display: flex;
 	justify-content: center;
 	align-items: center;	
+	}
+
+	.img__header{
+		width: 60vw;
 	}
 
 	.first_button{
