@@ -131,12 +131,12 @@ footer{
 
 	header h1{
 
-	font-size: 25px;
-	width: 40vw;
-	height: 56px;
-	display: flex;
-	justify-content: center;
-	align-items: center;	
+		font-size: 25px;
+		padding: 0;
+		width: 40vw;
+		height: auto;
+		display: flex;
+		align-items: center;	
 	}
 
 	.img__header{

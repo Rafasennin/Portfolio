@@ -180,11 +180,11 @@ footer{
 	header h1{
 
 		font-size: 25px;
+		padding: 0;
 		width: 40vw;
-		height: 56px;
+		height: auto;
 		display: flex;
-		justify-content: center;
-		align-items: center;	
+		align-items: center;
 		}
 
 		.img__header{
