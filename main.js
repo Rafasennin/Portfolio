@@ -31,10 +31,10 @@ function pickRandom(min, max){
  
 var timeOfDay = ["morning", "noon", "night", "rainy"];
 
-var switchTimeCircle = svg.append("circle").attr("cx",1320).attr("cy",60).attr("r", 20).attr("fill","darkgrey");
-var switchTimeCircle2 = svg.append("circle").attr("cx",1320).attr("cy",60).attr("r", 15).attr("fill","red");
-var text = svg.append("text").text("SWITCH").attr("x",1280).attr("y",100).attr("fill", "gold")
-.attr("font-size",20).attr("stroke","black").attr("font-family","sans-serif").attr("stroke-width",1);
+var switchTimeCircle = svg.append("circle").attr("cx",1300).attr("cy",60).attr("r", 40).attr("fill","darkgrey");
+var switchTimeCircle2 = svg.append("circle").attr("cx",1300).attr("cy",60).attr("r", 30).attr("fill","red");
+var text = svg.append("text").text("SWITCH").attr("x",1238).attr("y",130).attr("fill", "gold")
+.attr("font-size",30).attr("stroke","black").attr("font-family","sans-serif").attr("stroke-width",1,3);
 
 var active = false;
 
