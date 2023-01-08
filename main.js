@@ -33,7 +33,10 @@ var timeOfDay = ["morning", "noon", "night", "rainy"];
 
 var switchTimeCircle = svg.append("circle").attr("cx",1320).attr("cy",60).attr("r", 20).attr("fill","darkgrey");
 var switchTimeCircle2 = svg.append("circle").attr("cx",1320).attr("cy",60).attr("r", 15).attr("fill","red");
-var text = svg.append("text").text("SWITCH").attr("x",1290).attr("y",100).attr("fill", "gold");
+var text = svg.append("text").text("SWITCH").attr("x",1280).attr("y",100).attr("fill", "gold")
+.attr("font-size",20).attr("stroke","black").attr("font-family","sans-serif").attr("stroke-width",1);
+
+var active = false;
 
 
 function changeWeather(time){
@@ -41,11 +44,35 @@ function changeWeather(time){
     if (time === "morning") {
         sky.attr("fill","steelblue"); 
         sun.attr("cx",245).attr("fill", "gold").attr("r",55); 
+        clound1.attr("fill","#FFFFFF");
+        clound2.attr("fill","#FFFFFF");
+        clound3.attr("fill","#FFFFFF");
+        clound4.attr("fill","#FFFFFF");
+        clound5.attr("fill","#FFFFFF");
+        clound6.attr("fill","#FFFFFF");
+        clound7.attr("fill","#FFFFFF");
+        clound8.attr("fill","#FFFFFF");
+        clound9.attr("fill","#FFFFFF");
+        clound10.attr("fill","#FFFFFF");
+
+        active = false;
     }
 
     if (time === "noon") {
         sky.attr("fill","deepskyblue"); 
-        sun.attr("cx",670).attr("cy", 85).attr("r", 70).attr("fill", "yellow");  
+        sun.attr("cx",670).attr("cy", 85).attr("r", 70).attr("fill", "yellow"); 
+        clound1.attr("fill","#FFFFFF");
+        clound2.attr("fill","#FFFFFF");
+        clound3.attr("fill","#FFFFFF");
+        clound4.attr("fill","#FFFFFF");
+        clound5.attr("fill","#FFFFFF");
+        clound6.attr("fill","#FFFFFF");
+        clound7.attr("fill","#FFFFFF");
+        clound8.attr("fill","#FFFFFF");
+        clound9.attr("fill","#FFFFFF");
+        clound10.attr("fill","#FFFFFF"); 
+
+        active = false;
     }
 
     if (time === "night") {
@@ -61,6 +88,8 @@ function changeWeather(time){
         clound8.attr("fill","#D0D0D0");
         clound9.attr("fill","#D0D0D0");
         clound10.attr("fill","#D0D0D0");
+
+        active = false;
     }
 
     if(time === "rainy"){
@@ -79,8 +108,9 @@ function changeWeather(time){
         clound9.attr("fill","grey");
         clound10.attr("fill","grey");
 
-        setInterval(rainDown,700);
+       setInterval(rainDown,700);
 
+       active = true;
     }
 }
 
@@ -94,7 +124,9 @@ switchTimeCircle2.on("click", switchOn);
 
 function rainDown(){
 
-    for (let index = 0; index < 10; index++) {
+    if(active){
+
+   for (let index = 0; index < 10; index++) {
 
         //First clound
         var rainDrop1 = svg.append("circle").attr("r",5).attr("cy",120).attr("cx",300).attr("fill","lightblue");
@@ -133,19 +165,6 @@ function rainDown(){
 
         var rainDrop12 = svg.append("circle").attr("r",5).attr("cy",115  ).attr("cx",1090).attr("fill","lightblue");
         rainDrop12.transition().duration(2200).ease(d3.easeQuadIn).attr("cy",399).remove();
+   }
     }   
 }
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
