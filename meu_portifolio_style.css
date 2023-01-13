@@ -4,6 +4,11 @@
 	--main--white: #FFFFFF;	
 }
 
+@font-face {
+    font-family: 'icones';
+    src: url(../Projeto_meu_portifolio/font/icones.ttf);
+}
+
 body{
 	width: auto;
 	margin: 0 auto;
@@ -136,7 +141,7 @@ svg{
 	}
 
 	.side-menu__button__img i::before{
-		content: url(/Projeto_meu_portifolio/icons/icons8-cardápio.svg);
+		content: "\e904";
 	    font-size: 24px;
 		
 	}
