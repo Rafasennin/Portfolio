@@ -136,7 +136,7 @@ svg{
 	}
 
 	.side-menu__button__img i::before{
-		content: url(/Projeto_meu_portifolio/img/icons8-cardápio-64.png);
+		content: url(/Projeto_meu_portifolio/img/icons8-cardápio.svg);
 	    font-size: 24px;
 		
 	}
