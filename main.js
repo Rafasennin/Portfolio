@@ -168,3 +168,11 @@ function rainDown(){
    }
     }   
 }
+
+//menu slide set up
+
+const menuButton = document.querySelector(".side-menu__button__img");
+const sideMenu = document.querySelector(".side-menu__container");
+menuButton.addEventListener("click", ()=>{
+    sideMenu.classList.toggle("side-menu__container--active")
+});
