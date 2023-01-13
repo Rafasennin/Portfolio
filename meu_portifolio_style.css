@@ -4,10 +4,6 @@
 	--main--white: #FFFFFF;	
 }
 
-@font-face {
-    font-family: 'icones';
-    src: url(font/icones.ttf);
-}
 
 body{
 	width: auto;
