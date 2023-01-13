@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: 'icones';
-    src: url(../Projeto_meu_portifolio/font/icones.ttf);
+    src: url(https://icons8.com.br/icon/OTxpMqWbm71F/card%C3%A1pio);
 }
 
 body{
@@ -141,7 +141,7 @@ svg{
 	}
 
 	.side-menu__button__img i::before{
-		content: "\e904";
+		content: url(../Projeto_meu_portifolio/icons/icons8-cardápio-64.png);
 	    font-size: 24px;
 		
 	}
