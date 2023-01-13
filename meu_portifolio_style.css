@@ -99,10 +99,69 @@ footer{
 /*svg line dode*/
 
 svg{
-	background-color: linear-gradient(180deg,rgb(0, 147, 233, 0.5)30%, rgb(128, 208, 199, 0.3), #fcfcfc );;
+	background-color: linear-gradient(180deg,rgb(0, 147, 233, 0.5)30%, rgb(128, 208, 199, 0.3), #fcfcfc );
+}
+
+.side-menu__container{
+	display: none;
+}
+
+.side-menu__button__img{
+	display: none;
 }
 
 @media screen and (max-width: 768px){ 
+
+	.side-menu__container{
+		display: block;
+		background: linear-gradient(180deg,rgba(0, 148, 233, 0.793)30%, rgba(128, 208, 199, 0.722), #fcfcfc );
+		width: 50vw;
+		height: 46.4vh;
+		position: absolute;
+		left: -100vw;
+		transition: 0.5;
+	}
+
+	.side-menu__container--active{
+		left:0;
+		transition: 0.5;
+		
+	}	
+
+	.button__side-menu__header{
+		margin: 1em 0;
+		display: flex;
+		align-items: center;
+		padding-left: 8px;	
+	}
+
+	.side-menu__button__img i::before{
+		content: url(/Projeto_meu_portifolio/img/menu_black_24dp\ 1.svg);
+	    font-size: 24px;
+		
+	}
+
+	.button__side-menu__header:hover{
+		border-left: 3px solid black;
+	}
+
+	.side-menu__button__img {
+		display: block;
+		background: linear-gradient(180deg,rgba(0, 148, 233, 0.793)30%, rgba(128, 208, 199, 0.722)); 
+		border: none;	
+		
+	}
+
+
+	.side-menu__p{	
+		font-size: 18px;
+		font-weight: 700;
+		
+	}
+
+	.container__list{
+		display: none;
+	}
 
 	.header__logo{
 		display: grid;
