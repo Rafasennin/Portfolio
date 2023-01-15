@@ -32,7 +32,7 @@
 		</header>
 
 		<main>
-			<form action="mailto: rafasennin@hotmail.com? subject= contactform_submission" enctype="text/plain" onsubmit="location.href='thanks.html';">
+			<form action="mailto: rafasennin@hotmail.com" method="get" enctype="text/plain">
 				<label for="nomesobrenome">Nome e sobrenome</label>
 				<input type="text" placeholder="Digite seu nome e sobrenome" id="nomesobrenome" class="input__form name" required>
 
@@ -43,7 +43,7 @@
 				<input type="tel" placeholder="XX-99999-9999" id="seutelefone" class="input__form tel">
 
 				<label for="suamensagem">Deixe uma mensagem</label>
-				<textarea cols="65" rows="10" id="suamensagem" class="input__form mensage" required></textarea>
+				<textarea cols="65" rows="10" id="suamensagem" class="input__form mensage"></textarea>
 
 				<fieldset>
 					<legend class="legend_fieldset">Como prefere ser contactado ?</legend>
@@ -123,7 +123,7 @@
 				</tbody>
 			</table>
 
-			<p class="email__p"><strong>E-mail:</strong> <i class="italic__p">rafasennin@hotmail.com</i></p>
+			<a href="mailto:rafasennin@hotmail.com"><p class="email__p"><strong>E-mail:</strong> <i class="italic__p">rafasennin@hotmail.com</i></p></a>
 	
 		</main>
 
