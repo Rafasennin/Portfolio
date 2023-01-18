@@ -32,18 +32,18 @@
 		</header>
 
 		<main>
-			<form action="mailto: rafasennin@hotmail.com" method="get" enctype="text/plain">
+			<form name="form__contact" method="get" action="index.php">
 				<label for="nomesobrenome">Nome e sobrenome</label>
-				<input type="text" placeholder="Digite seu nome e sobrenome" id="nomesobrenome" class="input__form name" required>
+				<input type="text" placeholder="Digite seu nome e sobrenome" name="nome__form" id="nomesobrenome" class="input__form name" required>
 
 				<label for="seuemail">E-mail</label>
-				<input type="email" placeholder="seuemail@dominio.com.br" id="seuemail" class="input__form email" required>
+				<input type="email" placeholder="seuemail@dominio.com.br" name="email__form" id="seuemail" class="input__form email" required>
 
 				<label for="seutelefone">Telefone</label>
-				<input type="tel" placeholder="XX-99999-9999" id="seutelefone" class="input__form tel">
+				<input type="tel" placeholder="XX-99999-9999" name="tel__form" id="seutelefone" class="input__form tel">
 
 				<label for="suamensagem">Deixe uma mensagem</label>
-				<textarea cols="65" rows="10" id="suamensagem" class="input__form mensage"></textarea>
+				<textarea cols="65" rows="10" name="textearea__form" id="suamensagem" class="input__form mensage"></textarea>
 
 				<fieldset>
 					<legend class="legend_fieldset">Como prefere ser contactado ?</legend>
@@ -57,7 +57,7 @@
 
 				<fieldset>
 					<legend	class="legend_fieldset">Qual o melhor horário para entrar em contato ?</legend>
-						<select>
+						<select name="select1__form">
 							<option>Manhã</option>
 							<option>Tarde</option>
 							<option>Noite</option>
@@ -67,7 +67,7 @@
 				<fieldset>
 					<legend class="legend_fieldset">Qual dia da semana:</legend>
 
-					<select>
+					<select name="select2__form">
 						<option>Segunda-feira</option>
 						<option>Terça-feira</option>
 						<option>Quarta-feira</option>
@@ -80,7 +80,7 @@
 
 				<label class="label_checkbox"><input type="checkbox"  class="checkbox" checked>Gostaria de receber minha atualizações profissionais ?</label>
 
-				<input type="submit" value="Submit" class="form__submit">
+				<input type="submit" value="Submit"  class="form__submit">
 			</form>
 
 			<table>
