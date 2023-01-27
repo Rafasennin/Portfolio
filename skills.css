@@ -245,16 +245,11 @@ footer{
 	height:230px;
 }
 
-#logo_img{
-	margin-top: 30px;
-
-}
-
 .copyright{
 	font-size: 15px;
 	font-weight: bold;
-	padding-bottom: 1rem;
-	margin-top: 1rem;
+	padding-bottom:  1em;	
+	background-color: #fcfcfc;
 }
 
 @media screen and (max-width:768px ){

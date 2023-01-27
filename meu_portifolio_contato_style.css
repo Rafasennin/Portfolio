@@ -116,22 +116,45 @@ select{
 }
 
 .form__submit{
-	font-size: 20px;
+	font-size: 30px;
 	font-weight: bold;
 	text-align: center;
-	background-color: orange;
+	background-color: #0580bf;
 	border: none;
 	margin-left: 60px;
 	border-radius: 10px;	
+	box-shadow: 0 0 10px 5px;
+	width:30vw;
+	height: 8vh;
 	
 }
 
 .form__submit:hover{
 	transform: scale(1.1);
-	background-color: darkorange;
+	background-color: #0580bf;
 	color: darkblue	;
 	cursor: pointer;
 	transition: 1500ms;
+}
+
+.loading{
+	width: 40px;
+	vertical-align: middle;
+	animation: spin 1s infinite linear;
+}
+
+@keyframes spin{
+	from {
+		transform: rotate(0deg);	
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.lista{
+	display: none;
 }
 
 table, thead, table td{
@@ -159,18 +182,6 @@ footer{
 	height:230px;
 }
 
-#logo_img{
-	margin-top: 30px;
-
-}
-
-.copyright{
-	font-size: 15px;
-	font-weight: bold;
-	padding-bottom: 1rem;
-	margin-top: 1rem;
-}
-
 .email__p{
 	text-align: center;
 	margin-top: 4em;
@@ -184,6 +195,16 @@ strong{
 	font-style: italic;
 	text-decoration: underline;
 }
+
+
+.copyright{
+	font-size: 15px;
+	font-weight: bold;
+	padding-bottom:  1em;	
+	background-color: #fcfcfc;
+}
+
+
 
 @media screen and (max-width:768px ){
 
@@ -237,8 +258,17 @@ strong{
 	}
 
 	.form__submit{
-		width: 260px;
-		margin-left: 0;
+		width: 70vw;
+		height: 5vh;
+		margin: 1em 0 1em 1em;
+	}
+
+	.loading{
+		width: 30px;
+	}
+
+	.lista{
+		display: none;
 	}
 
 	table{

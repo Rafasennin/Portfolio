@@ -395,3 +395,5 @@ const sideMenu = document.querySelector(".side-menu__container");
 menuButton.addEventListener("click", ()=>{
     sideMenu.classList.toggle("side-menu__container--active")
 });
+
+
