@@ -1,0 +1,159 @@
+:root{
+	--background--color: #00030C;
+	--mainColor--description: #C0C0C0;
+	--main--white: #FFFFFF;	
+}
+
+body{
+	width: auto;
+	margin: 0 auto;
+	background: linear-gradient(180deg,rgb(0, 147, 233, 0.5)30%, rgb(128, 208, 199, 0.3), #fcfcfc );
+	font-family: 'Merriweather', serif;
+}
+
+header{
+	height: 350px;
+	background: linear-gradient(180deg,rgb(0, 147, 233, 0.5) );
+}
+
+header h1{
+	font-size: 50px;
+	color:black;
+	text-align: center;	
+	height: 50px;
+	padding-top: 5px;
+	padding-bottom: 1rem;
+	font-weight: 700;
+	background: white;		
+}
+
+.header__logo{
+	display: grid;
+	grid-template-columns: 12vw auto;	
+}
+
+nav{
+	display: flex;
+	justify-content: flex-end;
+}
+
+nav a{
+	text-transform: uppercase;
+	font-weight: bold ;
+	font-size: 20px;
+	color: black;
+	text-decoration: none;
+}
+
+nav a:hover{
+	color:darkblue;
+	font-size:25px;
+	cursor: pointer;
+
+}
+
+nav a:active{
+	color: red;
+}
+
+
+.first_button{
+	width:12vw;
+	background-color:lightblue;
+	border: 3px solid #00030C;
+	border-radius:7px;
+	padding: 5px 0;
+	margin-top: 3rem;
+	margin-right: 5rem;
+}
+
+#first_video{
+	margin-bottom: 20px;
+	border: 5px solid #00030C;
+	border-radius: 8px;
+}
+
+main h1{
+	color: black;
+	font-size: 20px;
+}
+
+main{
+	text-align: center;
+	margin:0,auto;
+}
+
+main a{
+	font-weight: bold ;
+	font-size: 20px;
+	color: black;
+	text-decoration: none;
+
+}
+
+main a:hover{
+	font-size: 25px;
+	color: darkblue;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.p_link{
+	margin-bottom: 10rem;
+}
+/*CSS footer*/
+
+footer{
+	text-align: center;
+	margin:0, auto;
+	background-color: #fcfcfc;
+	height:230px;
+}
+
+.copyright{
+	font-size: 15px;
+	font-weight: bold;
+	padding-bottom:  1em;	
+	background-color: #fcfcfc;
+}
+
+@media screen and (max-width:768px ){
+
+	.header__logo{
+		display: grid;
+		grid-template-columns: auto auto;		
+}
+
+	header h1{
+
+		font-size: 25px;
+		padding: 0;
+		width: 40vw;
+		height: auto;
+		display: flex;
+		align-items: center;	
+	}
+
+	.img__header{
+		width: 60vw;
+	}
+
+	.first_button{
+		width:120px;
+		margin-top: 3rem;
+		margin-right: 2rem;
+	}
+
+	main{
+		width: 100vw;
+	}
+
+	#first_video{
+		width: 90vw;
+	}
+
+	footer{
+		width: 100vw;
+		margin: 8rem auto;
+	}
+}		

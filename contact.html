@@ -8,8 +8,8 @@
 
 		<title>Rafasennin Portifólio</title>
 
-        <link rel="stylesheet" href="reset.css">
-		<link rel="stylesheet" href="meu_portifolio_contato_style.css">
+        <link rel="stylesheet" href="Contato/reset.css">
+		<link rel="stylesheet" href="Contato/meu_portifolio_contato_style.css">
 		<link rel="icon" href="img/logo_portifolio.jpg">
 		<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
 		<script src="https://kit.fontawesome.com/6d369afe1a.js" crossorigin="anonymous"></script> 
@@ -17,7 +17,7 @@
 
 	<body>
 		<header>
-			<section class="logo_section">
+			<section class="logo_section">	
 				<div class="header__logo">
 					 <img src="img/portfolio_logo_3.png" class="img__header">
 					  <h1 class="h1__header">Deixe seu contato</h1>
@@ -46,13 +46,12 @@
 				<textarea cols="65" rows="10" name="textearea__form" id="suamensagem" class="input__form mensage"></textarea>
 
 				<fieldset>
-					<legend class="legend_fieldset">Como prefere ser contactado ?</legend>
-
-					<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email" checked>E-mail</label>
-
-					<label for="radio-telefone"><input type="radio" name="contato" value="Telefone" id="radio-telefone">Telefone</label>
-
-					<label for="radio-WhatsApp"><input type="radio" name="contato" value="whatsapp" id="radio-WhatsApp">WhatsApp</label>
+					<legend	class="legend_fieldset">Como você prefere ser contactado ?</legend>
+						<select name="select1__form" id="contato" class="contato">
+							<option>Email</option>
+							<option>Telefone</option>
+							<option>WhatsApp</option>
+					</select>
 				</fieldset>
 
 				<fieldset>
@@ -134,6 +133,6 @@
 			<img src="img/portifolio_logo.jpg" id="logo_img">
 			<p class="copyright">&copy; Copyright</p>
 		</footer>
-		<script src="contact.js"></script>
+		<script src="Contato/contact.js"></script>
 	</body>
 </html>

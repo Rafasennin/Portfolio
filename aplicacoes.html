@@ -7,8 +7,8 @@
 
 		<title>Rafasennin Portifólio</title>
 
-        <link rel="stylesheet" href="Projetos/reset.css">
-		<link rel="stylesheet" href="Projetos/meu_portifolio_projetos_style.css">
+        <link rel="stylesheet" href="Aplicaçoes/reset.css">
+		<link rel="stylesheet" href="Aplicaçoes/style.css">
 		<link rel="icon" href="img/logo_portifolio.jpg">
 		<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
 		<script src="https://kit.fontawesome.com/6d369afe1a.js" crossorigin="anonymous"></script> 
@@ -19,7 +19,7 @@
 			<section>
 				<div class="header__logo">
 					 <img src="img/portfolio_logo_3.png" class="img__header">
-					  <h1 class="h1__header">Projetos</h1>
+					  <h1 class="h1__header">Aplicações</h1>
 				</div>
 
 				<nav>	
@@ -31,21 +31,20 @@
 		</header>
 
 		<main>
-			<h1 class="titulo_1">Projeto realizado no curso de lógica de programação da "Alura" com "p5.Js". </h1><br><br>
+			
+			<h1 class="titulo_1">Calculadora de IMC</h1><br><br>
 
-			<video width="600" heigth="400" controls src="Projetos/video/freeway _sample_ play.mp4" id="first_video">
-			</video>
-
-			<p class="p_link freeway"><a href="https://editor.p5js.org/rafasennin/full/qVUOPlFTg" target="_blank">Link para Freeway</a></p>
-		</main>
-
-		<main>
-			<h1 class="titulo_1">Projeto realizado no curso de lógica de programação da "Alura" com "p5.Js". </h1><br><br>
-
-			<video width="600" heigth="400" controls src="Projetos/video/pong_sample_play.mp4" id="first_video">
-			</video>
-
-			<p class="p_link pong"><a href="https://editor.p5js.org/rafasennin/full/XNn79MhTT" target="_blank">Link para Pong</a></p>
+		<section class="imc">
+			<label for="altura" class="altura_label">Insira sua altura</label>
+			<input type="number" class="altura" id="altura" placeholder="Ex: 1,75">
+		
+			<label for="peso" class="peso_label">Insira seu peso</label>
+			<input type="number" class="peso" id="peso" placeholder="Ex: 81">
+		
+			<button class="soma">Confira seu resultado</button>
+		
+			<p class="resultado"></p>
+		</section>
 		</main>
 
 
@@ -53,5 +52,6 @@
 			<img src="img/portifolio_logo.jpg" id="logo_img">
 			<p class="copyright">&copy; Copyright</p>
 		</footer>
+		<script src="Aplicaçoes/main.js"></script>
 	</body>
 </html>

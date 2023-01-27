@@ -1,0 +1,199 @@
+:root{
+	--background--color: #00030C;
+	--mainColor--description: #C0C0C0;
+	--main--white: #FFFFFF;	
+}
+
+body{
+	width: auto;
+	margin: 0 auto;
+	background: linear-gradient(180deg,rgb(0, 147, 233, 0.5)30%, rgb(128, 208, 199, 0.3), #fcfcfc );
+	font-family: 'Merriweather', serif;
+}
+
+header{
+	height: 350px;
+	background: linear-gradient(180deg,rgb(0, 147, 233, 0.5) );
+}
+
+header h1{
+	font-size: 50px;
+	color:black;
+	text-align: center;	
+	height: 50px;
+	padding-top: 5px;
+	padding-bottom: 1rem;
+	font-weight: 700;
+	background: white;		
+}
+
+.header__logo{
+	display: grid;
+	grid-template-columns: 12vw auto;	
+}
+
+nav{
+	display: flex;
+	justify-content: flex-end;
+}
+
+nav a{
+	text-transform: uppercase;
+	font-weight: bold ;
+	font-size: 20px;
+	color: black;
+	text-decoration: none;
+}
+
+nav a:hover{
+	color:darkblue;
+	font-size:25px;
+	cursor: pointer;
+
+}
+
+nav a:active{
+	color: red;
+}
+
+
+.first_button{
+	width:12vw;
+	background-color:lightblue;
+	border: 3px solid #00030C;
+	border-radius:7px;
+	padding: 5px 0;
+	margin-top: 3rem;
+	margin-right: 5rem;
+}
+
+.titulo_1{
+	text-align: center;
+	font-size: 50px;
+	color:black;
+	margin: 0  auto 2em auto;
+	font-weight: 700;
+}
+
+.imc{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 5em;
+	width: 10vw;
+	margin-left: 43em;
+
+}
+
+.altura_label, .peso_label{
+	font-size: 22px;
+	color:black;
+	margin: 0  0 1em 1em;
+	font-weight: 500;
+	width: 15vw;
+}
+
+.peso_label{
+	margin-left: 1.7em;
+}
+
+.altura, .peso, .soma, .resultado{
+	text-align: center;
+	font-size: 18px;
+	color:black;
+	margin: 0  auto 1em auto;
+	font-weight: 400;
+}
+
+.resultado{
+	margin-left: 0.5em;
+	font-size: 22px;
+	color: darkred;
+	font-weight: 700;
+}
+
+
+
+.soma{
+	width:15vw;
+	font-weight: 700;
+	margin: 0 0 1em 0;
+}
+
+
+/*CSS footer*/
+
+footer{
+	text-align: center;
+	margin:0, auto;
+	background-color: #fcfcfc;
+	height:230px;
+}
+
+.copyright{
+	font-size: 15px;
+	font-weight: bold;
+	padding-bottom:  1em;	
+	background-color: #fcfcfc;
+}
+
+@media screen and (max-width:768px ){
+
+	.header__logo{
+		display: grid;
+		grid-template-columns: auto auto;		
+}
+
+	header h1{
+
+		font-size: 25px;
+		padding: 0;
+		width: 40vw;
+		height: auto;
+		display: flex;
+		align-items: center;	
+	}
+
+	.img__header{
+		width: 60vw;
+	}
+
+	.first_button{
+		width:120px;
+		margin-top: 3rem;
+		margin-right: 2rem;
+	}
+
+	.titulo_1{
+		text-align: center;
+		font-size: 35px;
+	}
+	
+	.imc{
+		margin-bottom: 5em;
+		width: 10vw;
+		margin-left: 4em;
+	
+	}
+	
+	.altura_label, .peso_label{
+		margin: 0  0 0.5em 1em;
+		font-weight: 500;
+		width: 60vw;
+	}
+	
+	
+	.resultado{
+		margin-left: 1.3em;
+	}
+	
+	.soma{
+		width:62vw;
+		font-weight: 700;
+		margin: 0 0 1em 0;
+	}
+	
+	footer{
+		width: 100vw;
+		margin: 8rem auto;
+	}
+}		
