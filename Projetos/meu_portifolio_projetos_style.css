@@ -73,17 +73,21 @@ nav a:active{
 	border-radius: 8px;
 }
 
-main h1{
+.img__fortune{
+	width: 40vw;
+}
+
+section h1{
 	color: black;
 	font-size: 20px;
 }
 
-main{
+section{
 	text-align: center;
 	margin:0,auto;
 }
 
-main a{
+section a{
 	font-weight: bold ;
 	font-size: 20px;
 	color: black;
@@ -91,7 +95,7 @@ main a{
 
 }
 
-main a:hover{
+section a:hover{
 	font-size: 25px;
 	color: darkblue;
 	cursor: pointer;
