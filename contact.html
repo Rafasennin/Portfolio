@@ -33,6 +33,9 @@
 
 		<main>
 			<form class ="mainForm" id="mainForm">
+				<div class="personal__data">
+					<h2 class ="title__box">Dados pessoais</h2>
+
 				<label for="nomesobrenome">Nome e sobrenome</label>
 				<input type="text" placeholder="Digite seu nome e sobrenome" name="nome__form" id="nomesobrenome" class="input__form name" required>
 
@@ -44,6 +47,59 @@
 
 				<label for="suamensagem">Deixe uma mensagem</label>
 				<textarea cols="65" rows="10" name="textearea__form" id="suamensagem" class="input__form mensage"></textarea>
+			</div>
+
+				<h2 class ="title__box">Endereço</h2>
+
+				<div class="address__box">
+					<label for = "cep" class="label__name">CEP</label>
+					<input type="number" placeholder="0000-0000" id="cep" name="cep" class="form__address">
+					<div class="erro__cep"></div>
+
+					<label for = "logradouro" class="label__name">Logradouro</label>
+					<input type="text" placeholder="Rua : Professor professor" id="logradouro" name="logradouro" class="form__address">
+
+					<label for = "numero" class="label__name">Número</label>
+					<input type="text" placeholder="000" id="numero" name="numero" class="form__address">
+
+					<label for = "bairro" class="label__name">Bairro</label>
+					<input type="text" placeholder=" Vila vila" id="bairro" name="bairro" class="form__address">
+
+					<label for = "cidade" class="label__name">Cidade</label>
+					<input type="text" placeholder=" nome da cidade" id="cidade" name="cidade" class="form__address">
+
+					<legend class="label__name">Estado-UF</legend>
+					<select id="estado" name="estado" class="form__address"> 
+						<option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                        <option value="EX">Estrangeiro</option>
+					</select>
+				</div>
 
 				<fieldset>
 					<legend	class="legend_fieldset">Como você prefere ser contactado ?</legend>
