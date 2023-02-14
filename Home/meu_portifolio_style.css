@@ -1,3 +1,5 @@
+
+
 :root{
 	--background--color: #00030C;
 	--mainColor--description: #C0C0C0;
@@ -29,6 +31,34 @@ header h1{
 	font-weight: 700;
 	background: white;		
 }
+
+.hr__line1{
+	margin-top:  -13.5em;
+}
+
+.article__title{
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.article__p{
+	margin-bottom: 0.5em;
+}
+
+
+.main__article{
+	font-size: 28px	;
+	font-weight: 400;
+	width: 80vw;
+	margin: 2em auto 2em auto;
+
+}
+
+#svg__container{
+	margin-top: 3em;
+}
+
+
 
 /* Flex grid para o logo*/
 
@@ -75,6 +105,7 @@ ul{
 	margin-right: 0.5rem;
 }
 
+
 /*svg line dode*/
 
 svg{
@@ -113,7 +144,7 @@ footer{
 		display: block;
 		background: linear-gradient(180deg,rgba(0, 148, 233, 0.793)30%, rgba(128, 208, 199, 0.722), #fcfcfc );
 		width: 14em;
-		height: 26em;
+		height: 29em;
 		position: absolute;
 		left: -100vw;
 		transition: 0.5;
@@ -150,6 +181,16 @@ footer{
 	}
 
 
+	.sobre__mim{
+		display: none;
+	
+	}
+
+	.hr__line1, .hr__line2{
+		display: none;
+	}
+
+
 	.side-menu__p{	
 		font-size: 18px;
 		font-weight: 700;
@@ -182,7 +223,7 @@ footer{
 	}
 
 	svg{
-		width: 100vwpx;
+		width: 100vw;
 		height: 500px;
 	}
 
