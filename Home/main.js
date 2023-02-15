@@ -149,6 +149,9 @@ var switchTimeCircle2 = svg.append("circle").attr("cx",1300).attr("cy",60).attr(
 var text = svg.append("text").text("SWITCH").attr("x",1238).attr("y",130).attr("fill", "gold")
 .attr("font-size",30).attr("stroke","black").attr("font-family","sans-serif").attr("stroke-width",1,3);
 
+var text2 = svg.append("text").text("This is me, studying night and day").attr("x",470).attr("y",190).attr("fill", "gold")
+.attr("font-size",30).attr("stroke","black").attr("font-family","sans-serif").attr("stroke-width",1,3);
+
 
 function changeWeather(time){
 
@@ -331,7 +334,6 @@ function changeWeather(time){
 }
 
 
-
 function switchOn(){
     changeWeather(timeOfDay[pickRandom(0,4)]) 
     return changeWeather;
@@ -387,7 +389,6 @@ function rainDown(){
     }   
 }
 
-
 //menu slide set up
 
 const menuButton = document.querySelector(".side-menu__button__img");
@@ -395,5 +396,59 @@ const sideMenu = document.querySelector(".side-menu__container");
 menuButton.addEventListener("click", ()=>{
     sideMenu.classList.toggle("side-menu__container--active")
 });
+
+
+//language changer
+
+const sobreMim = document.querySelector(".main__article");
+
+
+function languageChangerPortuguese (){
+    sobreMim.innerHTML = `<h2 class="article__title">Sobre mim,</h2><br>
+
+    <p class="article__p">Bem-vindo à todos ao meu portfólio, obrigado por estar visitando o site e utilizar do seu 
+    tempo para conhecer um pouco do meu trabalho.</p> 
+
+    <p class="article__p">Atualmente, estou estudando desenvolvimento Front-end. Iniciei meus estudos na plataforma <u>Alura</u> e hoje,
+    faço parte do grupo de mentorados do <u>Pedro Marins</u> e <u>Henrique de Andrade</u>. Em paralelo, estou cursando
+    Análise e Desenvolvimento de Sistemas pela Universidade São Francisco.</p>
+
+    <p class="article__p">Busco minha primeira oportunidade como desenvolvedor “Júnior/Trainee” e estou bastante otimista com o
+    desenvolvimento dessa trajetória. Gosto de salientar que independente das certificações e diploma, meu objetivo
+    é mostrar trabalho e competência na prática.</p>
+
+    <p class="article__p">Sou alguém muito dedicado, focado e aberto a oportunidades. Acredito no meu potêncial de desenvolvimento, independente de estar saindo da área da saúde após mais de
+    15 anos sem ter tido contato algum com programação anteriormente.</p>
+    
+    <p class="article__p">Este portfólio foi desenvolvido do zero, sem nenhum "copy and paste", mas sim, conhecimento adquirido ao longo dos cursos. 
+    O  site foi feito sem nenhum framework, apenas utilizando (HTML, CSS e Javascript). Estou em constante aprendizado, pois o caminho da programação é longo 
+    e em constante desenvolvimento, contudo, acredito sim que já estou no patamar do essencial necessário para atuar como junior/Trainee.</p>`
+    
+}
+
+
+function languageChangerEnglish(){
+
+    sobreMim.innerHTML = `<h2 class="article__title">About me,</h2><br>
+
+    <p class="article__p">Welcome everyone to my portfolio, thank you for visiting my website and using your
+    time to get to discover a little about my work.</p>
+
+    <p class="article__p">Currently, I'm studying Front-end development. I started my studies on the <u>Alura</u> platform and today,
+    I am part of the mentor group of <u>Pedro Marins</u> and <u>Henrique de Andrade</u>. In parallel, I'm studying
+    Systems Analysis and Development at São Francisco University.</p>
+
+    <p class="article__p">I am looking for my first opportunity as a “Junior/Trainee” developer and I am very optimistic about the
+    development of my career path. I would like to point out that regardless of certifications and degrees, my main goal
+    is to show work and competence in practice.</p>
+
+    <p class="article__p">I am someone very dedicated, focused and open to new opportunities. I believe in my development potential, regardless of leaving the health area after more than
+    15 years without having had any contact with programming before.</p>
+   
+    <p class="article__p">This portfolio was developed from scratch, without any "copy and paste", but knowledge acquired throughout the courses.
+    The site was made without any framework, just using (HTML, CSS and Javascript). I am in constant learning process, because the path of programming is long
+    and in constant change, however, I do believe that I am already to go one step further and get an opportunity as junior or Trainee level.</p>`
+    
+}
 
 
