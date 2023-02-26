@@ -91,6 +91,36 @@ nav a:active{
     margin: 1em 0;
 }
 
+.soft__skills{
+    margin-top: 3em;
+}
+
+.soft__skills__list{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.5em;
+    margin: 0 0.5em 0 0.5em;
+    
+}
+
+.soft__list{
+    border-right:  2px solid grey;
+   
+}
+
+.text__skills{
+    margin-top: 2em;
+    font-size: 22px;
+    margin: 2em 1em 0 1em;
+    line-height: 1.5em;
+    border:  5px solid grey;
+    padding: 0.5em;
+    font-weight: bold;
+
+}
+
 .skill_img{
     margin: 1em auto;
     display: flex;

@@ -404,50 +404,108 @@ const sobreMim = document.querySelector(".main__article");
 
 
 function languageChangerPortuguese (){
-    sobreMim.innerHTML = `<h2 class="article__title">Sobre mim,</h2><br>
+    sobreMim.innerHTML = `<img class="perfil__img" src="img/profile master.png">
 
-    <p class="article__p">Bem-vindo à todos ao meu portfólio, obrigado por estar visitando o site e utilizar do seu 
-    tempo para conhecer um pouco do meu trabalho.</p> 
+    <h1 class="home__title">Bem-vindo e obrigado por visitar meu portfólio.</h1>
 
-    <p class="article__p">Atualmente, estou estudando desenvolvimento Front-end. Iniciei meus estudos na plataforma <u>Alura</u> e hoje,
-    faço parte do grupo de mentorados do <u>Pedro Marins</u> e <u>Henrique de Andrade</u>. Em paralelo, estou cursando
-    Análise e Desenvolvimento de Sistemas pela Universidade São Francisco.</p>
+    <h2 class="article__title">Sobre mim,</h2>
 
-    <p class="article__p">Busco minha primeira oportunidade como desenvolvedor “Júnior/Trainee” e estou bastante otimista com o
-    desenvolvimento dessa trajetória. Gosto de salientar que independente das certificações e diploma, meu objetivo
-    é mostrar trabalho e competência na prática.</p>
+    <p class="article__p">
+        Meu nome é <u>Rafael D' Santos</u>, tenho 38 anos, sou brasileiro/israelense. Moro na cidade de 
+        Bragança Paulista - SP com meus dois filhos. Sou apaixonado pelo aprendizado de novos idiomas e consigo me comunicar
+        nas seguintes línguas: Inglês, Hebraico, Francês, Espanhol, Italiano. Nas horas vagas sou músico e adoro me aventurar
+        na culinária japonesa.
+    </p>
 
-    <p class="article__p">Sou alguém muito dedicado, focado e aberto a oportunidades. Acredito no meu potêncial de desenvolvimento, independente de estar saindo da área da saúde após mais de
-    15 anos sem ter tido contato algum com programação anteriormente.</p>
-    
-    <p class="article__p">Este portfólio foi desenvolvido do zero, sem nenhum "copy and paste", mas sim, conhecimento adquirido ao longo dos cursos. 
-    O  site foi feito sem nenhum framework, apenas utilizando (HTML, CSS e Javascript). Estou em constante aprendizado, pois o caminho da programação é longo 
-    e em constante desenvolvimento, contudo, acredito sim que já estou no patamar do essencial necessário para atuar como junior/Trainee.</p>`
+    <p class="article__p">
+        Me considero uma pessoa muito dedicada, focada e aberta a oportunidades. Acredito no meu potêncial de desenvolvimento,
+        mesmo com o desafio de migrar de carreira, <strong>saindo da área da saúde</strong>, onde atuei por mais de 15anos,
+        indo agora em direção a carreira de programador.
+    </p><br><br>
+
+    <h2 class="article__title"><u>Minha trajetória</u></h2>
+
+    <p class="article__p">
+        Atuei por 15 anos na área de saúde, iniciando minha trajetória profissional como técnico em radiologia médica, função na qual
+         estive por cinco anos. Após concluir minha graduação como farmacêutico, trabalhei em funções como farmacêutico e subgerente farmacêutico, liderando
+        um time de mais de 15 colaboradores. Motivado pelo amor por novas culturas e busca de melhores condições de trabalho, imigrei para Israel como cidadão israelense, 
+          onde recebi a licença para atuar como farmacêutico no país após 2 anos de muito estudo e provas de validação. Tive a oportunidade de atuar na Ben-shimon Floris,
+           indústria farmacêutica israelense, na função de analista de assuntos regulatórios. Meu retorno ao Brasil despertou meu interesse por análises de sistemas
+            e programação, me motivando  a estudar desenvolvimento Front-end. Iniciei meus estudos na plataforma Alura e hoje, faço parte do grupo de mentorados do 
+            Pedro Marins e Henrique de Andrade. 
+           Em paralelo, estou cursando Análise e Desenvolvimento de Sistemas pela Universidade São Francisco.
+   </p><br>
+
+   <h2 class="article__title"><u>Meus objetivos</u></h2>
+
+    <p class="article__p">
+        Busco minha primeira oportunidade como desenvolvedor “Júnior/Trainee” e estou bastante otimista com o
+        desenvolvimento dessa trajetória. Gosto de salientar que independente das certificações e diploma, meu objetivo
+        é mostrar trabalho e competência na prática.
+        Estou em constante aprendizado, pois sei que o caminho da programação élongo e exige constante desenvolvimento, contudo, acredito
+        que já possuo as habilidades necessárias para atuar como desenvolvedor <u>Junior/Trainee.</u>
+</p><br><br>
+
+<h2 class="article__title"><u>Sobre este portfólio</u></h2>
+
+    <p class="article__p">Este portfólio foi desenvolvido utilizando as tecnologias: HTML5, CSS3 e Javascript. </p>
+    <p class="article__p">A animação abaixo tem por objetivo, mostrar um pouco de conhecimento em lógica de programação, através
+        de uma ilustração da minha rotina diária de estudos.
+         </p>
+    `
     
 }
 
 
 function languageChangerEnglish(){
 
-    sobreMim.innerHTML = `<h2 class="article__title">About me,</h2><br>
+    sobreMim.innerHTML = `<img class="perfil__img" src="img/profile master.png">
 
-    <p class="article__p">Welcome everyone to my portfolio, thank you for visiting my website and using your
-    time to get to discover a little about my work.</p>
-
-    <p class="article__p">Currently, I'm studying Front-end development. I started my studies on the <u>Alura</u> platform and today,
-    I am part of the mentor group of <u>Pedro Marins</u> and <u>Henrique de Andrade</u>. In parallel, I'm studying
-    Systems Analysis and Development at São Francisco University.</p>
-
-    <p class="article__p">I am looking for my first opportunity as a “Junior/Trainee” developer and I am very optimistic about the
-    development of my career path. I would like to point out that regardless of certifications and degrees, my main goal
-    is to show work and competence in practice.</p>
-
-    <p class="article__p">I am someone very dedicated, focused and open to new opportunities. I believe in my development potential, regardless of leaving the health area after more than
-    15 years without having had any contact with programming before.</p>
-   
-    <p class="article__p">This portfolio was developed from scratch, without any "copy and paste", but knowledge acquired throughout the courses.
-    The site was made without any framework, just using (HTML, CSS and Javascript). I am in constant learning process, because the path of programming is long
-    and in constant change, however, I do believe that I am already to go one step further and get an opportunity as junior or Trainee level.</p>`
+    <h1 class="home__title">Welcome and thank you for visiting my portfolio.</h1>
+    
+    <h2 class="article__title">About me,</h2>
+    
+    <p class="article__p">
+    My name is <u>Rafael D' Santos</u>, I'm 38 years old, Brazilian/Israeli. I live in the city of
+    Bragança Paulista - SP with my two children. I am passionate about learning new languages and I can communicate
+    in the following languages: English, Hebrew, French, Spanish, Italian. In my free time time I like play guitar and cooking japanese food.
+    </p>
+    
+    <p class="article__p">
+    I consider myself a very dedicated, focused and open to opportunities person. I believe in my development potential,
+    even with the challenge of changing career path, <strong>leaving the health area</strong>, where I worked for over 15 years,
+    now heading towards a career as a programmer.
+    </p><br><br>
+    
+    <h2 class="article__title"><u>My trajectory</u></h2>
+    
+    <p class="article__p">
+    I've worked for 15 years in the health area, starting my professional career as a medical radiology technician, a function in which
+    I was for five years. After completing my graduation as a pharmacist, I worked in roles as pharmacist and assistant pharmaceutical manager, leading
+    a team of more than 15 employees. Motivated by the love for new cultures and the search for better working conditions, I immigrated to Israel as an Israeli citizen,
+    where I received the license to work as a pharmacist in the country after 2 years of study and validation tests. I had the opportunity to work at Ben-shimon Floris,
+    Israeli pharmaceutical industry, as a regulatory affairs analyst. My return to Brazil sparked my interest in systems analysis
+    and programming, motivating me to study Front-end development. I started my studies on the Alura platform and today, I am part of the group of mentors at
+    Pedro Marins and Henrique de Andrade.
+    At the same time, I'm studying Systems Analysis and Development at Universidade São Francisco.
+    </p><br>
+    
+    <h2 class="article__title"><u>My goals</u></h2>
+    
+    <p class="article__p">
+    I am looking for my first opportunity as a “Junior/Trainee” developer and I am very optimistic about the
+    development of this trajectory. I like to point out that regardless of certifications and degrees, my goal
+    is to show work and competence in practice.
+    I am in constant learning, because I know that the path of programming is long and requires constant development, however, I believe
+    that I already have the necessary skills to act as a <u>Junior/Trainee</u> developer.
+    </p><br><br>
+    
+    <h2 class="article__title"><u>About this Portfolio</u></h2>
+    
+    <p class="article__p">This portfolio was developed using the technologies: HTML5, CSS3 and Javascript. </p>
+    <p class="article__p">The purpose of the animation below is to show a bit of knowledge in programming logic, through
+    an illustration of my daily study routine.
+    </p>`
     
 }
 
