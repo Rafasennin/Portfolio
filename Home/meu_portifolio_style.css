@@ -20,6 +20,10 @@ header{
 	background: linear-gradient(180deg,rgb(0, 147, 233, 0.5) ); 
 }
 
+.list__tablet{
+	display: none;
+}
+
 
 header h1{
 	font-size: 50px;
@@ -223,6 +227,50 @@ footer{
 	background-color: #fcfcfc;
 }
 
+@media screen and (max-width: 1020px) {
+
+	.perfil__img{
+		position: relative;
+		left: 7.9em;
+		
+	}
+	.menu__button{
+		width: 6em;
+	}
+
+	.list__tablet{
+		display: flex;
+	}
+	
+	.home__title{
+		text-align: center;
+		margin-bottom: 3em;
+		font-size: 28px;
+		font-weight: bold;
+		width: 45vw;
+		margin-left: 5em;
+		border: 1px solid black;
+		border-radius: 15px;
+		padding: 0.2em;
+	}
+
+
+	#Capa_1{
+		position: relative;
+		left: 15em;
+		bottom: 20em;
+		width: 200px;
+	}
+
+	.man__desktop{
+		height: 600px;
+	}
+
+	.list__desktop{
+		display: none;
+	}
+}
+
 
 @media screen and (max-width: 768px){ 
 
@@ -234,6 +282,10 @@ footer{
 		position: absolute;
 		left: -100vw;
 		transition: 0.5;
+	}
+
+	.list__tablet{
+		display: none;
 	}
 
 	.side-menu__container--active{
