@@ -29,4 +29,4 @@
 ![Alt text](https://github.com/Rafasennin/Portfolio/blob/main/img%20readme/github.svg)
 
 ### Code Versioner
-![Alt text](https://github.com/Rafasennin/Portfolio/blob/main/img%20readme/gitbash.png)
+![Alt text](https://github.com/Rafasennin/Portfolio/blob/main/img%20readme/git_88x29.png)
