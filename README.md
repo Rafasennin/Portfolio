@@ -1,13 +1,32 @@
-  <h1>What's On My Project</h1>
+  # What's On My Project
   
- <p>Developer Front-end Portfolio</p> 
- <h2>Created by:</h2>
+  Developer Front-end Portfolio
+  
+  
+  ## Created by:
+  
+  Rafael D'Santos
  
- <p> Rafael D'Santos</p>
+ ## Technologies and Softwares :
+ ### UI/UX and Wireframe
+ ![Alt text](https://github.com/Rafasennin/Portfolio/blob/main/img%20readme/figma.svg)
  
- <h2>Technologies and Softwares :</h2>
  
- [image](https://user-images.githubusercontent.com/117246770/222900831-b3f44026-0654-420c-a866-1f1e85cdd213.png)
-  <p>javaScript</p>
-  <p>Css 3</p>
-  <p>Lógica de programação</p>
+ ### Languages
+ ![Alt text](https://github.com/Rafasennin/Portfolio/blob/main/img%20readme/html5.svg)
+ ![Alt text](https://github.com/Rafasennin/Portfolio/blob/main/img%20readme/css3.svg)
+ ![Alt text](https://github.com/Rafasennin/Portfolio/blob/main/img%20readme/javascript.svg)
+ 
+ ### Frameworks
+ ![Alt text](https://github.com/Rafasennin/Portfolio/blob/main/img%20readme/react.svg)
+ ### (In progress)
+ 
+ 
+### Code Editor
+ ![Alt text](https://github.com/Rafasennin/Portfolio/blob/main/img%20readme/visualStudio.svg)
+ 
+### Publications and Documentations
+![Alt text](https://github.com/Rafasennin/Portfolio/blob/main/img%20readme/github.svg)
+
+### Code Versioner
+![Alt text](https://github.com/Rafasennin/Portfolio/blob/main/img%20readme/gitbash.png)
